@@ -21,18 +21,12 @@ public class DiceDemo extends GraphicsApp {
     private static final int MAX_DICE_VALUE = 6;
     private static final int DICE_X_START_POS = DICE_WIDTH/2;
     private static final int DICE_Y_START_POS = (SCREEN_HEIGHT - DICE_HEIGHT)/2;
-    private static final Color DICE_COLOR = Colors.ORANGE;
-    private static final int DICE_POINT_RADIUS = DICE_WIDTH/10;
-    private static final Color DICE_POINTS_COLOR = Colors.WHITE;
-
 
     @Override
     public void initialize() {
         setFrameRate(1);
         setCanvasSize(SCREEN_WIDTH, SCREEN_HEIGHT);
     }
-
-
 
     @Override
     public void draw() {
@@ -53,7 +47,6 @@ public class DiceDemo extends GraphicsApp {
         }
         return dice;
     }
-
 
     private int getRandomDiceValue() {
         int value = (int) ((Math.random() * MAX_DICE_VALUE) + 1);

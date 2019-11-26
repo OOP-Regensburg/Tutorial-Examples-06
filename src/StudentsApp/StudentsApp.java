@@ -25,7 +25,7 @@ public class StudentsApp {
     }
 
     private Student createStudentObject() {
-        System.out.println("Bitte gebe die Informationen für den nächsten Studierenden ein.");
+        System.out.println("Bitte gib die Informationen für den nächsten Studierenden ein.");
         String name = readString("Name: ");
         double grade = readDouble("Note: ");
         Student student = new Student(name, grade);
